@@ -59,7 +59,7 @@ sanity-test: azurefile
 
 .PHONY: integration-test
 integration-test: azurefile
-	go test -v -timeout=10m ./test/integration
+	chmod +x test/integration/run-test.sh
 
 .PHONY: e2e-test
 e2e-test:
